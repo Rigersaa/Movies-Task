@@ -1,0 +1,61 @@
+.photo-grid {
+    display: grid;             
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    gap: 16px;                   
+    padding: 20px;                
+    justify-items: center;       
+  }
+  
+  
+  .photo-card {
+    background-color: #fff;     
+    border-radius: 10px;         
+    overflow: hidden;          
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;          
+  }
+  
+
+  .photo-card:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+  }
+  
+  
+  .photo-img {
+    width: 100%;                  
+    height: auto;                 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  
+  .photo-title {
+    padding: 10px;               
+    font-size: 16px;               
+    font-weight: bold;            
+    color: #333;                 
+  }
+  
+
+
+.search-box {
+    width: 250px;              
+    padding: 10px;              
+    font-size: 16px;            
+    border: 1px solid #ccc;    
+    border-radius: 5px;        
+    outline: none;             
+    background-color: #f9f9f9; 
+    transition: border-color 0.3s; 
+    display: block;            
+    margin: 0 auto;             
+  }
+  
+  .search-box:focus {
+    border-color: #007bff;      
+  }
+  
+  .search-box::placeholder {
+    color: #888;                }
+  
